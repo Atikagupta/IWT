@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+               .inner1
+               {
+                   height : 100px;
+                   width : 100px;
+                   background-color: black;
+               }
+               .inner2
+               {
+                   height : 100px;
+                   width : 100px;
+                   background-color: white;
+               }
+               .container
+               {
+                   display:flex;
+               }
+
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+        rows=prompt("enter number of rows")
+        columns=prompt("enter number of columns")
+        for(j=0;j<rows;j++)
+        {
+            document.write(" <div class='container'>")
+        for(i=0;i<columns;i++)
+        {
+            if((i+j)%2==0)
+            document.write(" <div class='inner1'></div>")
+            else
+            document.write(" <div class='inner2'></div>")
+
+        }
+        document.write("</div>")
+    }
+        </script>
+    </body>
+</html>
